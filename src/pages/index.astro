@@ -1,0 +1,37 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Welcome to Astro.">
+  <main class="container mx-auto mt-10 mb-20">
+    <h1 class="font-sans text-center font-black sm:text-5xl text-2xl">
+      VSCODE settings.json
+    </h1>
+    <pre
+      class="bg-white/80 p-10 rounded-lg drop-shadow-2xl mt-20 text-xs sm:text-sm md:text-md lg:text-lg">{`
+	{
+	  "workbench.sideBar.location": "right", // sidebar on right
+	  "editor.wordWrap": "on", // alltime word wrap
+	  "[typescriptreact]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode" // prettier formatting
+	  },
+	  "editor.codeActionsOnSave": {
+		"source.organizeImports": true, // sort imports while saving
+		"source.fixAll": true // auto-fix all js problem
+	  },
+	  "workbench.colorTheme": "Noir Poimandres", // my fav theme
+	  "editor.fontFamily": "'Cascadia Code', Consolas, 'Courier New', monospace", //cascadia code font
+	  "editor.fontWeight": "300", // font weight, perfect for me
+	  "editor.fontLigatures": true, // great to see this font ligatures
+	  "git.path": "C:\\Users\\SazzadTanim\\Downloads\\PortableGit\\bin\\git.exe", //portable git
+	  "[jsonc]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	  },
+	  "[javascript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	  },
+	  "git.autofetch": true,
+	  "tailwindCSS.classAttributes": ["class", "className", "ngClass", ".*Styles*"] //adding tailwind intellisense
+	}`}</pre>
+  </main>
+</Layout>
